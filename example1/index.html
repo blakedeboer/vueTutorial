@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Vue Tutorial</title>
+	</head>
+	<body>
+		<div id="app">{{ text }} World.
+			<ul>
+				<li v-for="item in items">
+					{{ item }}
+				</li>
+			</ul>
+
+			<!-- TWO-WAY BINDING -->
+			<textarea v-model="message" class="message" rows="5" maxlength="72"></textarea><br>
+			<p class="booktext">{{ message }}</p>
+		</div>
+		<script type="text/javascript" src="../public/bundle.js"></script>
+	</body>
+</html>
